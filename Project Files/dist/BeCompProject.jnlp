@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="BeCompProject.jnlp">
+  <information>
+    <title>BeCompProject</title>
+    <vendor>lenik</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="BeCompProject.jar" size="116545" download="eager" />
+    <jar href="lib\controlsfx-8.0.1-samples.jar" size="94017" download="eager" />
+    <jar href="lib\controlsfx-8.0.1-sources.jar" size="262445" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2390900" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="BeCompProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="becompproject.BeCompProject"  name="BeCompProject" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,9 @@
+.root {
+     -fx-background-image: url("back2.jpg");
+}
+
+.jfx-button {
+     -jfx-button-type: RAISED;
+     -fx-background-color: blue;
+     -fx-text-fill: white;
+}

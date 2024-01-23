@@ -1,0 +1,4 @@
+File name:           C:/Users/Public/Documents/BeCompProject_v7/src/becompproject/pacCap/pc.pcap
+Data byte rate:      37 bytes/s
+Average packet size: 55.67 bytes
+Average packet rate: 0 packets/s

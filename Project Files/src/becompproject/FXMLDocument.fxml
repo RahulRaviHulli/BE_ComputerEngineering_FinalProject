@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="becompproject.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_menu" layoutX="2.0" layoutY="2.0" prefHeight="526.0" prefWidth="756.0">
+         <children>
+            <TitledPane layoutX="246.0" prefHeight="57.0" prefWidth="182.0" text="DEFENCE TOOLKIT">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </TitledPane>
+           <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="375.0" onAction="#data_compression_1" prefHeight="55.0" prefWidth="232.0" text="DATA  COMPRESSION"> 
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Backup1" buttonType="RAISED" layoutX="54.0" layoutY="172.0" onAction="#Backup1" prefHeight="55.0" prefWidth="232.0" text="BACKUP">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="disk_encryption1" buttonType="RAISED" layoutX="54.0" layoutY="275.0" onAction="#disk_encryption_button" prefHeight="55.0" prefWidth="232.0" text="DISK ENCRYPTION">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ids" buttonType="RAISED" layoutX="403.0" layoutY="275.0" onAction="#ids_button_1" prefHeight="55.0" prefWidth="334.0" text="INTRUSION DETECTION SYSTEM" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ips" buttonType="RAISED" layoutX="403.0" layoutY="172.0" onAction="#ips_button" prefHeight="55.0" prefWidth="334.0" ripplerFill="#c63f3f" text="INTRUSION PREVENTION SYSTEM" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="compression_window_1" prefHeight="526.0" prefWidth="762.0">
+         <children>
+            <JFXButton fx:id="back_button_data_compression_window" buttonType="RAISED" layoutX="44.0" layoutY="7.0" onAction="#back_data_compression_window" prefHeight="39.0" prefWidth="88.0" text="&lt;-BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TitledPane animated="false" layoutX="237.0" prefHeight="51.0" prefWidth="294.0" text="DATA COMPRESSION">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TitledPane>
+            <JFXButton fx:id="compress_directory_1" buttonType="RAISED" layoutX="110.0" layoutY="168.0" onAction="#compress_directory_1" prefHeight="55.0" prefWidth="232.0" text="COMPRESS DIRECTORY" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane fx:id="compress_directory_window" prefHeight="526.0" prefWidth="771.0">
+               <children>
+                  <JFXButton fx:id="back_button_directory_compression" buttonType="RAISED" layoutX="43.0" layoutY="5.0" onAction="#back_directory_compression" prefHeight="39.0" prefWidth="94.0" text="&lt;-BACK">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="directory_compression_filepath" layoutX="38.0" layoutY="253.0" prefHeight="55.0" prefWidth="433.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <JFXButton fx:id="compress_directory_2" layoutX="529.0" layoutY="177.0" onAction="#compress_directory_2" prefHeight="55.0" prefWidth="204.0" text="COMPRESS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="choose_directory" buttonType="RAISED" layoutX="126.0" layoutY="180.0" onAction="#choose_directory_compression" prefHeight="55.0" prefWidth="244.0" text="CHOOSE DIRECTORY">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="backup_window" prefHeight="526.0" prefWidth="756.0">
+         <children>
+            <JFXButton fx:id="back_backup_window" buttonType="RAISED" layoutX="58.0" layoutY="6.0" onAction="#back_backup_window" prefHeight="39.0" prefWidth="88.0" text="&lt;-BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TitledPane fx:id="backup_title" alignment="CENTER" animated="false" layoutX="252.0" prefHeight="38.0" prefWidth="202.0" text="BACKUP UTILITY" textAlignment="CENTER">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TitledPane>
+            <JFXButton fx:id="backup_normal_1" buttonType="RAISED" layoutX="108.0" layoutY="158.0" onAction="#Backup_normal_1" prefHeight="55.0" prefWidth="253.0" text="BACKUP" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="backup_encryption1" buttonType="RAISED" layoutX="399.0" layoutY="158.0" onAction="#backup_encryption" prefHeight="55.0" prefWidth="253.0" text="BACKUP(Encryption)">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXButton>
+            <AnchorPane fx:id="backup_with_encryption_window" prefHeight="526.0" prefWidth="762.0">
+               <children>
+                  <TitledPane alignment="CENTER" layoutX="211.0" prefHeight="49.0" prefWidth="360.0" text="BACKUP WITH ENCRYPTION" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TitledPane>
+                  <JFXComboBox fx:id="drivelist_directory_backup_encryption" layoutX="455.0" layoutY="243.0" prefHeight="39.0" prefWidth="204.0" />
+                  <JFXButton buttonType="RAISED" layoutX="99.0" layoutY="173.0" onAction="#encrypt_before_backup" prefHeight="55.0" prefWidth="210.0" text="ENCRYPT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="291.0" layoutY="335.0" onAction="#backup_with_encryption_1" prefHeight="55.0" prefWidth="184.0" text="BACKUP">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="back_backup_with_encryption_button" buttonType="RAISED" layoutX="51.0" layoutY="6.0" onAction="#back_backup_with_encryption" prefHeight="39.0" prefWidth="94.0" text="&lt;-BACK">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="455.0" layoutY="173.0" onAction="#detect_drives_backup_encryption" prefHeight="55.0" prefWidth="222.0" text="DETECT DRIVES">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="backup_window_normal_1" prefHeight="436.0" prefWidth="762.0">
+         <children>
+            <JFXButton fx:id="back_normal_backup_window" buttonType="RAISED" layoutX="43.0" layoutY="7.0" onAction="#back_normal_backup_window" prefHeight="39.0" prefWidth="94.0" text="&lt;-BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TitledPane fx:id="normal_backup_button" animated="false" layoutX="249.0" prefHeight="55.0" prefWidth="210.0" text="NORMAL BACKUP">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TitledPane>
+            <JFXButton fx:id="backup_directory_normal" buttonType="RAISED" layoutX="420.0" layoutY="175.0" onAction="#backup_directory_normal" prefHeight="55.0" prefWidth="176.0" text="DIRECTORY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="backup_normal2" buttonType="RAISED" layoutX="107.0" layoutY="175.0" onAction="#dataBackupAction" prefHeight="55.0" prefWidth="176.0" text="FILE" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <AnchorPane fx:id="directory_backup" prefHeight="531.0" prefWidth="762.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="273.0" layoutY="323.0" onAction="#directory_backup_normal" prefHeight="45.0" prefWidth="210.0" text="BACKUP">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox fx:id="drivelist_directory_backup" layoutX="562.0" layoutY="190.0" prefHeight="39.0" prefWidth="105.0" />
+                  <JFXButton layoutX="514.0" layoutY="129.0" onAction="#detect_drives_directory_backup" prefHeight="46.0" prefWidth="176.0" text="DETECT DRIVES">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="directory_backup_filepath_1" layoutX="19.0" layoutY="188.0" prefHeight="39.0" prefWidth="492.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="back_directory_backup_normal" buttonType="RAISED" layoutX="46.0" layoutY="5.0" onAction="#back_directory_backup_normal" prefHeight="39.0" prefWidth="88.0" text="&lt;-BACK">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="choose_directory_1" buttonType="RAISED" layoutX="126.0" layoutY="130.0" onAction="#choose_directory_1" prefHeight="55.0" prefWidth="232.0" text="CHOOSE DIRECTORY">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <TitledPane layoutX="234.0" prefHeight="39.0" prefWidth="308.0" text=" DIRECTORY BACKUP" textAlignment="CENTER">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="backup_window_normal_2" disable="true" prefHeight="531.0" prefWidth="762.0">
+               <children>
+                  <JFXButton fx:id="back_backup_file_normal" buttonType="RAISED" layoutX="47.0" layoutY="6.0" onAction="#back_backup_file_normal" prefHeight="39.0" prefWidth="88.0" text="&lt;-BACK">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="112.0" layoutY="197.0" onAction="#browseFileAction" prefHeight="55.0" prefWidth="195.0" text="Browse Files">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="selectedFilePath" labelFloat="true" layoutX="28.0" layoutY="262.0" prefHeight="55.0" prefWidth="416.0" promptText="File Selected">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <JFXComboBox fx:id="driveList" layoutX="522.0" layoutY="265.0" onAction="#copyToDriveAction" prefHeight="55.0" prefWidth="122.0" />
+                  <JFXButton buttonType="RAISED" layoutX="465.0" layoutY="193.0" onAction="#detectDrivesAction" prefHeight="55.0" prefWidth="195.0" text="Detect Drives">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="disk_encryption_window" prefHeight="531.0" prefWidth="771.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="6.0" onAction="#back_data_encryption" prefHeight="39.0" prefWidth="94.0" text="&lt;-BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TitledPane layoutX="273.0" prefHeight="45.0" prefWidth="232.0" text="DISK ENCRYPTION">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TitledPane>
+            <JFXButton buttonType="RAISED" layoutX="87.0" layoutY="210.0" onAction="#encrypt_1" prefHeight="55.0" prefWidth="210.0" text="ENCRYPT">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="436.0" layoutY="210.0" onAction="#decrypt_1" prefHeight="55.0" prefWidth="210.0" text="DECRYPT">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ids_window" prefHeight="526.0" prefWidth="762.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="7.0" onAction="#back_ids" prefHeight="39.0" prefWidth="94.0" text="&lt;-BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TitledPane layoutX="193.0" prefHeight="45.0" prefWidth="360.0" text="INTRUSION DETECTION SYSTEM">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TitledPane>
+            <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="183.0" onAction="#simple_scan" prefHeight="55.0" prefWidth="253.0" text="SIMPLE SCAN">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="415.0" layoutY="183.0" onAction="#rigorous_scan" prefHeight="55.0" prefWidth="253.0" text="RIGOROUS SCAN">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ips_window" prefHeight="531.0" prefWidth="771.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="7.0" onAction="#back_ips_window" prefHeight="39.0" prefWidth="94.0" text="&lt;-BACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TitledPane layoutX="182.0" prefHeight="49.0" prefWidth="424.0" text="INTRUSION PREVENTION SYSTEM">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TitledPane>
+            <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="183.0" onAction="#simple_scan_ips" prefHeight="55.0" prefWidth="253.0" text="SIMPLE SCAN">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="415.0" layoutY="183.0" onAction="#rigorous_scan_ips" prefHeight="55.0" prefWidth="253.0" text="RIGOROUS SCAN">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
