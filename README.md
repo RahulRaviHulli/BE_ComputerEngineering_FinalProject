@@ -1,2 +1,2 @@
-# BE_ComputerEngineering_FinalProject
-BE_ComputerEngineering_FinalProject
+# Attack and Defence Strategies To Implement End Point Protection on Client Systems
+The present study is an attempt to testify basic attack strategies that the client systems face most commonly, measure the degree of compromise that the attack achieves, and apply various known defensive strategies so that we can testify the number of defence strategies which are most effective against a particular attack.
